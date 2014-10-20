@@ -1,6 +1,6 @@
 
 body {
-    background-image:('http://bgfons.com/upload/stars_texture2956.jpg');
+    background-image: url("http://bgfons.com/upload/stars_texture2956.jpg");
     color: rgb(255,255,255);
     font-family: "Open Sans", sans-serif;
     text-align: center;
