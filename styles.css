@@ -4,6 +4,7 @@ body {
     color: rgb(255,255,255);
     font-family: "Open Sans", sans-serif;
     text-align: center;
+    outline: 1px black;
 }
 
 #content {
@@ -21,5 +22,6 @@ footer {
 	font-size: 90%;
     text-align: center;
     color: rgb(255,255,255);
+    outline: 1px black;
 }
 
