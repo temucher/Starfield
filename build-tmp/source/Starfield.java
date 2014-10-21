@@ -14,6 +14,8 @@ import java.io.IOException;
 
 public class Starfield extends PApplet {
 
+//Teagan Mucher, Block 4 AP CS, Lowell High School
+
 Particle[] bob = new Particle[400];
 double oddX, oddY;
 boolean seizure, seizureWarning;
@@ -28,6 +30,7 @@ public void setup()
 		bob[i]= new NormalParticle();
 	}
 	bob[bob.length-1] = new OddballParticle();
+	bob[bob.length-2] = new JumboParticle();
 }
 public void draw()
 {
@@ -92,6 +95,28 @@ class NormalParticle implements Particle
 		{
 			x=250;
 			y=250;
+		}
+	}
+}
+class JumboParticle extends NormalParticle
+{
+	public void show() 
+	{
+		ellipse((float)x,(float)y,30,30);
+	}
+	public void reset()
+	{
+		if(x<0||x>500)
+		{
+			x=250;
+			y=250;
+			angle=(Math.random()*2*(Math.PI));
+		}
+		else if(y<0||y>500)
+		{
+			x=250;
+			y=250;
+			angle=(Math.random()*2*(Math.PI));
 		}
 	}
 }
